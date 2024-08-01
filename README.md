@@ -1,8 +1,11 @@
-**Car Rental System**
+#Car Rental System
+
 Project Overview
+
 This project is a simple Car Rental System implemented using Java and Object-Oriented Programming (OOP) principles. It allows users to rent and return cars, manage customer information, and calculate rental costs.
 
 Features
+
 Add Cars: Add cars to the rental system.
 Add Customers: Register new customers.
 Rent Cars: Rent available cars to customers.
@@ -11,7 +14,8 @@ Calculate Rental Costs: Calculate the total rental cost based on the number of r
 
 
 Classes and Methods
-Car
+
+i) Car
 Represents a car in the rental system.
 
 Attributes:
@@ -21,6 +25,8 @@ brand: Brand of the car.
 model: Model of the car.
 basePricePerDay: Base rental price per day.
 isAvailable: Availability status of the car.
+
+
 Methods:
 
 Car(String carId, String brand, String model, double basePricePerDay): Constructor to initialize car attributes.
@@ -31,19 +37,26 @@ calculatePrice(int rentalDays): Calculates the total rental price based on the n
 isAvailable(): Checks if the car is available for rent.
 rent(): Marks the car as rented.
 returnCar(): Marks the car as returned.
-Customer
+
+
+ii) Customer
+
 Represents a customer in the rental system.
 
 Attributes:
 
 customerId: Unique identifier for the customer.
 name: Name of the customer.
+
+
 Methods:
 
 Customer(String customerId, String name): Constructor to initialize customer attributes.
 getCustomerId(): Returns the customer ID.
 getName(): Returns the customer name.
-Rental
+
+
+iii) Rental
 Represents a rental transaction.
 
 Attributes:
@@ -51,6 +64,8 @@ Attributes:
 car: The rented car.
 customer: The customer who rented the car.
 days: The number of rental days.
+
+
 Methods:
 
 Rental(Car car, Customer customer, int days): Constructor to initialize rental attributes.
@@ -58,7 +73,8 @@ getCar(): Returns the rented car.
 getCustomer(): Returns the customer.
 getDays(): Returns the number of rental days.
 
-CarRentalSystem
+
+iv) CarRentalSystem
 Manages the car rental system operations.
 
 Attributes:
@@ -66,6 +82,8 @@ Attributes:
 cars: List of available cars.
 customers: List of registered customers.
 rentals: List of rental transactions.
+
+
 Methods:
 
 CarRentalSystem(): Constructor to initialize lists.
